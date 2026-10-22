@@ -1,0 +1,55 @@
+# Crypto collateral haircuts: all choices fixed before results were examined.
+raw_dir: data/raw
+out_dir: reports
+seed: 7
+
+source:
+  # Coin Metrics Community data: daily reference price (PriceUSD) per asset, published as free CSV archives.
+  owner: Coin Metrics
+  repo: https://github.com/coinmetrics/data
+  url_template: https://raw.githubusercontent.com/coinmetrics/data/{commit}/csv/{asset}.csv
+  commit: f1a36afb962731c387bb03982758ab0103063da5
+  licence: CC BY-NC 4.0
+  downloaded: "2026-10-22"
+  field: PriceUSD          # end-of-day (00:00 UTC) USD reference price
+
+# Collateral universe: every Coin Metrics free asset with a continuous daily PriceUSD history
+# starting before 2021. MATIC is kept until its series ends (Oct 2025) to avoid survivorship bias.
+assets: [btc, eth, xrp, bnb, doge, ada, trx, link, ltc, bch, xlm, etc, algo, dot, uni, aave, matic_eth]
+stablecoins: [usdt, usdc]   # reported separately
+
+haircut:
+  confidence: 0.99          # one breach in 100 close-out windows is the design target
+  mpor_days: 2              # margin period of risk: days from last good margin to close-out
+  mpor_sensitivity: [1, 5, 10]
+  min_history_days: 365     # a coin is lendable only after a year of price history
+  hist_window_days: 365     # baseline: trailing one-year historical VaR
+  fhs_window_days: 1095     # filtered historical simulation: three years of standardised returns
+  ewma_lambda: 0.94         # RiskMetrics daily decay
+  floor_window_days: 3650   # anti-procyclicality floor: up to ten years of history (EMIR-style lookback)
+  max_haircut: 1.0
+  fixed_grid:               # ILLUSTRATIVE static grid of the kind used when a desk first onboards crypto
+    btc: 0.20
+    eth: 0.25
+    default: 0.40
+
+test:
+  start: "2018-01-01"
+  end: "2026-05-23"
+  split_date: "2022-01-01"
+
+book:                       # ILLUSTRATIVE collateral book for the business-outcome table
+  collateral_usd: 1000000000
+  weights: {btc: 0.50, eth: 0.25, others: 0.25}   # others split equally across live, lendable coins
+economics:                  # ILLUSTRATIVE assumptions, used only for the business-outcome table
+  lending_spread: 0.04      # annual net spread earned on the loan balance
+  client_pd_annual: 0.05    # chance a margin client fails in a year, assumed independent of the market
+  margin_call_horizon_days: 5
+
+stress_events:
+  "Mar 2020 COVID crash": "2020-03-11"
+  "May 2021 sell-off": "2021-05-18"
+  "Jun 2022 Celsius / 3AC": "2022-06-12"
+  "Nov 2022 FTX": "2022-11-07"
+  "Aug 2024 yen carry unwind": "2024-08-03"
+  "Oct 2025 liquidation cascade": "2025-10-09"

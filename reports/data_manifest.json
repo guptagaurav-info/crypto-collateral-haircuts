@@ -1,0 +1,104 @@
+{
+  "source": "https://github.com/coinmetrics/data",
+  "commit": "f1a36afb962731c387bb03982758ab0103063da5",
+  "licence": "CC BY-NC 4.0",
+  "downloaded": "2026-10-22",
+  "field": "PriceUSD",
+  "files": {
+    "btc": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/btc.csv",
+      "sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+      "bytes": 2482497
+    },
+    "eth": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/eth.csv",
+      "sha256": "46b18f3df967405374b1f6ee8a3d11ee1b7a5b176ac9fb4342caf6bf8648f2cc",
+      "bytes": 2121732
+    },
+    "xrp": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/xrp.csv",
+      "sha256": "251ed578003a742e42e3fb239af5c765903384b4cc42fee6b3872be8a5b0b568",
+      "bytes": 1279291
+    },
+    "bnb": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/bnb.csv",
+      "sha256": "7efa3cf1965110ad687c76051fee49efea97698504a7e641206444047bf5f6f2",
+      "bytes": 482820
+    },
+    "doge": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/doge.csv",
+      "sha256": "ab756a42b9c1560dfdba6b1da20eb9a11e6e7263e3df53a7f85ddc45b5b3e0a1",
+      "bytes": 1576582
+    },
+    "ada": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/ada.csv",
+      "sha256": "be2809d07b4fc70b2fdaaf5177fabd9d04893d5db85f4280b02d0170ad99a0e8",
+      "bytes": 933393
+    },
+    "trx": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/trx.csv",
+      "sha256": "5f7fb5591c2cc39911059bd28137b5e02e1e0368f46430e0e1116a06a536390b",
+      "bytes": 557374
+    },
+    "link": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/link.csv",
+      "sha256": "721fd2c5f0e131357782f2a23585c16f9da5a394c1a6ab0de910f4375ad5fb34",
+      "bytes": 727889
+    },
+    "ltc": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/ltc.csv",
+      "sha256": "a47defa0eae5c5e39b7f4b4392a309d32daffb271f4cfd8e5d2c915dcc009a6e",
+      "bytes": 1598248
+    },
+    "bch": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/bch.csv",
+      "sha256": "ac397297b3b6481cfd70bfb1c9b36e991deb2a70c50b885f0ed3d68a79aa7423",
+      "bytes": 1072034
+    },
+    "xlm": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/xlm.csv",
+      "sha256": "f80c092699a51ac1d7b37f9ebe8e50d3adb03fd2411768eca30bb824211c8d56",
+      "bytes": 1167808
+    },
+    "etc": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/etc.csv",
+      "sha256": "01619a6fb1cc16ce61e5fc8474bd907bd2f1ad8ec831e82e36a9b2c99fad1a68",
+      "bytes": 1180218
+    },
+    "algo": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/algo.csv",
+      "sha256": "8c7bbe9750f6b0a736be4ec49e5746d1490259df7ef16199357e3427734fe311",
+      "bytes": 651625
+    },
+    "dot": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/dot.csv",
+      "sha256": "cdab3a1581fe214b39786ef383127420eb7dea09f4f692bd658f7359187e85af",
+      "bytes": 457992
+    },
+    "uni": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/uni.csv",
+      "sha256": "33d05f333d4b8322631710b776c54b312f14542adabd551db19e9bf164df6a40",
+      "bytes": 489760
+    },
+    "aave": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/aave.csv",
+      "sha256": "c70e5f897e0a8896e5fc3416e87ccef1d5c7d03010f72f56ccc901fe85c481aa",
+      "bytes": 490454
+    },
+    "matic_eth": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/matic_eth.csv",
+      "sha256": "c4340bf39828893e0cc8f58674385ad215519b4d2454b4a1c795709a73afd89d",
+      "bytes": 478151
+    },
+    "usdt": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/usdt.csv",
+      "sha256": "bc6cec81ee5958009964d9fbb0f81f75f590869a7aabe2add5abcd10ced32b39",
+      "bytes": 1085105
+    },
+    "usdc": {
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/usdc.csv",
+      "sha256": "6851af28f5e3f2f205090631063b969708c9d1135535a6d8cc085e2ed2932af2",
+      "bytes": 876977
+    }
+  }
+}

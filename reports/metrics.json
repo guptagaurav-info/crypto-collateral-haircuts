@@ -1,0 +1,520 @@
+{
+  "data": {
+    "source": "https://github.com/coinmetrics/data",
+    "commit": "f1a36afb962731c387bb03982758ab0103063da5",
+    "licence": "CC BY-NC 4.0",
+    "downloaded": "2026-10-22",
+    "assets": [
+      "btc",
+      "eth",
+      "xrp",
+      "bnb",
+      "doge",
+      "ada",
+      "trx",
+      "link",
+      "ltc",
+      "bch",
+      "xlm",
+      "etc",
+      "algo",
+      "dot",
+      "uni",
+      "aave",
+      "matic_eth"
+    ],
+    "stablecoins": [
+      "usdt",
+      "usdc"
+    ],
+    "price_days_total": 64584,
+    "test_start": "2018-01-01",
+    "test_end": "2026-05-21",
+    "asset_days_tested": 44497,
+    "n_assets": 17
+  },
+  "settings": {
+    "confidence": 0.99,
+    "mpor_days": 2,
+    "fixed_grid": {
+      "btc": 0.2,
+      "eth": 0.25,
+      "default": 0.4
+    },
+    "economics_illustrative": {
+      "lending_spread": 0.04,
+      "client_pd_annual": 0.05,
+      "margin_call_horizon_days": 5
+    },
+    "book_illustrative": {
+      "collateral_usd": 1000000000,
+      "weights": {
+        "btc": 0.5,
+        "eth": 0.25,
+        "others": 0.25
+      }
+    }
+  },
+  "models": {
+    "fixed": {
+      "asset_days": 44497,
+      "avg_haircut": 0.37590736454142976,
+      "avg_haircut_btc": 0.2,
+      "avg_haircut_eth": 0.25,
+      "avg_haircut_alts": 0.4,
+      "breach_rate": 0.0004269950783198867,
+      "breach_rate_btc_eth": 0.0017956252040483187,
+      "breach_rate_alts": 0.0002084907873133356,
+      "nonoverlap_windows": 22255,
+      "nonoverlap_breaches": 3,
+      "kupiec_lr": 415.4413142051431,
+      "kupiec_p": 0.0,
+      "indep_lr": 0.0008095345179341962,
+      "indep_p": 0.9773013956810841,
+      "p_breach_after_breach": 0.0,
+      "mean_shortfall_bp": 0.24002435077335962,
+      "shortfall_given_breach_pct": 5.621243966506412,
+      "worst_shortfall_pct": 20.069652674366225,
+      "dh5_p99_pp": 0.0,
+      "dh5_max_pp": 0.0
+    },
+    "hist1y": {
+      "asset_days": 44497,
+      "avg_haircut": 0.1644137483696765,
+      "avg_haircut_btc": 0.11532568964050956,
+      "avg_haircut_eth": 0.15273011539961773,
+      "avg_haircut_alts": 0.1692649039735109,
+      "breach_rate": 0.01177607479155898,
+      "breach_rate_btc_eth": 0.013548808357819131,
+      "breach_rate_alts": 0.011493054650647625,
+      "nonoverlap_windows": 22255,
+      "nonoverlap_breaches": 250,
+      "kupiec_lr": 3.2887750811769365,
+      "kupiec_p": 0.0697550431842876,
+      "indep_lr": 0.2654812377904818,
+      "indep_p": 0.6063792317319326,
+      "p_breach_after_breach": 0.008,
+      "mean_shortfall_bp": 5.405848660205465,
+      "shortfall_given_breach_pct": 4.590535263991653,
+      "worst_shortfall_pct": 34.00181052686716,
+      "dh5_p99_pp": 1.4681010070877742,
+      "dh5_max_pp": 6.521154378244454
+    },
+    "fhs": {
+      "asset_days": 44497,
+      "avg_haircut": 0.1654228564218911,
+      "avg_haircut_btc": 0.12918747755446386,
+      "avg_haircut_eth": 0.15904928644114247,
+      "avg_haircut_alts": 0.16882415454604643,
+      "breach_rate": 0.01148392026428748,
+      "breach_rate_btc_eth": 0.011753183153770812,
+      "breach_rate_alts": 0.01144093195381929,
+      "nonoverlap_windows": 22255,
+      "nonoverlap_breaches": 248,
+      "kupiec_lr": 2.834776535688434,
+      "kupiec_p": 0.092243632318048,
+      "indep_lr": 5.59393395620009,
+      "indep_p": 0.01802277544515196,
+      "p_breach_after_breach": 0.0,
+      "mean_shortfall_bp": 5.0514562116040995,
+      "shortfall_given_breach_pct": 4.398721077255335,
+      "worst_shortfall_pct": 34.12766827427032,
+      "dh5_p99_pp": 10.824692691975068,
+      "dh5_max_pp": 44.05158012246826
+    },
+    "fhs_floor": {
+      "asset_days": 44497,
+      "avg_haircut": 0.21824279348551498,
+      "avg_haircut_btc": 0.1715415200849186,
+      "avg_haircut_eth": 0.20831297980199268,
+      "avg_haircut_alts": 0.22276342155720072,
+      "breach_rate": 0.0030339123985886687,
+      "breach_rate_btc_eth": 0.002448579823702253,
+      "breach_rate_alts": 0.003127361809700034,
+      "nonoverlap_windows": 22255,
+      "nonoverlap_breaches": 62,
+      "kupiec_lr": 163.79293415379607,
+      "kupiec_p": 0.0,
+      "indep_lr": 0.34668154832593245,
+      "indep_p": 0.5559976630247573,
+      "p_breach_after_breach": 0.0,
+      "mean_shortfall_bp": 1.7289937142799572,
+      "shortfall_given_breach_pct": 5.698891355875204,
+      "worst_shortfall_pct": 28.805380503219414,
+      "dh5_p99_pp": 7.408345909228578,
+      "dh5_max_pp": 44.05158012246826
+    }
+  },
+  "book": {
+    "fixed": {
+      "avg_book_haircut": 0.26250000000000007,
+      "avg_loan_capacity_usd": 737500000.0,
+      "spread_revenue_usd_yr": 29500000.0,
+      "breach_days_per_yr": 0.3574926542605289,
+      "expected_shortfall_if_default_usd": 54243.09757530585,
+      "expected_loss_usd_yr": 2712.154878765293,
+      "worst_shortfall_usd": 136850035.0812859,
+      "worst_shortfall_date": "2020-03-10",
+      "peak_margin_call_usd": 5.551115123125783e-08,
+      "peak_margin_call_date": "2021-09-18",
+      "margin_call_p99_usd": 0.0,
+      "crash_loss_total_usd": 25761495.23328658,
+      "crash_events_breached": 1,
+      "test_years": 8.383299110198495,
+      "revenue_over_test_usd": 247307323.7508556
+    },
+    "hist1y": {
+      "avg_book_haircut": 0.13964278193686694,
+      "avg_loan_capacity_usd": 860357218.0631332,
+      "spread_revenue_usd_yr": 34414288.72252533,
+      "breach_days_per_yr": 2.7407770159973883,
+      "expected_shortfall_if_default_usd": 354763.69675670966,
+      "expected_loss_usd_yr": 17738.184837835484,
+      "worst_shortfall_usd": 258250465.2752225,
+      "worst_shortfall_date": "2020-03-10",
+      "peak_margin_call_usd": 17965138.767000426,
+      "peak_margin_call_date": "2018-01-17",
+      "margin_call_p99_usd": 9949373.573202914,
+      "crash_loss_total_usd": 300907960.30488217,
+      "crash_events_breached": 5,
+      "test_years": 8.383299110198495,
+      "revenue_over_test_usd": 288505276.0256607
+    },
+    "fhs": {
+      "avg_book_haircut": 0.14776951554783202,
+      "avg_loan_capacity_usd": 852230484.452168,
+      "spread_revenue_usd_yr": 34089219.37808672,
+      "breach_days_per_yr": 3.21743388834476,
+      "expected_shortfall_if_default_usd": 393331.84544170497,
+      "expected_loss_usd_yr": 19666.59227208525,
+      "worst_shortfall_usd": 230061043.5233041,
+      "worst_shortfall_date": "2020-03-10",
+      "peak_margin_call_usd": 288514422.9238885,
+      "peak_margin_call_date": "2020-03-12",
+      "margin_call_p99_usd": 70587334.46396768,
+      "crash_loss_total_usd": 321680435.8156665,
+      "crash_events_breached": 4,
+      "test_years": 8.383299110198495,
+      "revenue_over_test_usd": 285780122.4796757
+    },
+    "fhs_floor": {
+      "avg_book_haircut": 0.19458112243943587,
+      "avg_loan_capacity_usd": 805418877.560564,
+      "spread_revenue_usd_yr": 32216755.10242256,
+      "breach_days_per_yr": 0.8341495266079008,
+      "expected_shortfall_if_default_usd": 138130.1950052154,
+      "expected_loss_usd_yr": 6906.509750260771,
+      "worst_shortfall_usd": 193602070.73008025,
+      "worst_shortfall_date": "2020-03-10",
+      "peak_margin_call_usd": 241822326.09328207,
+      "peak_margin_call_date": "2020-03-13",
+      "margin_call_p99_usd": 30658298.445662394,
+      "crash_loss_total_usd": 164675351.20590645,
+      "crash_events_breached": 2,
+      "test_years": 8.383299110198495,
+      "revenue_over_test_usd": 270082694.3836219
+    }
+  },
+  "breakeven_vs_baseline": {
+    "fixed": {
+      "lending_given_up_usd": 122857218.06313324,
+      "revenue_given_up_usd_yr": 4914288.722525328,
+      "revenue_given_up_over_test_usd": 41197952.2748051,
+      "crash_loss_avoided_usd": 275146465.0715956,
+      "breakeven_client_failure_share_of_crashes": 0.14973098878113886
+    },
+    "fhs_floor": {
+      "lending_given_up_usd": 54938340.5025692,
+      "revenue_given_up_usd_yr": 2197533.620102767,
+      "revenue_given_up_over_test_usd": 18422581.642038822,
+      "crash_loss_avoided_usd": 136232609.09897572,
+      "breakeven_client_failure_share_of_crashes": 0.13522886894615993
+    }
+  },
+  "halves": {
+    "first": {
+      "fixed": {
+        "avg_haircut": 0.370739871824216,
+        "breach_rate": 0.0009155413138017853,
+        "mean_shortfall_bp": 0.5540999519665019,
+        "worst_shortfall_pct": 20.069652674366225
+      },
+      "hist1y": {
+        "avg_haircut": 0.1917236429667964,
+        "breach_rate": 0.012874799725337605,
+        "mean_shortfall_bp": 7.19851299543331,
+        "worst_shortfall_pct": 34.00181052686716
+      },
+      "fhs": {
+        "avg_haircut": 0.19496081380061134,
+        "breach_rate": 0.012703135728999771,
+        "mean_shortfall_bp": 6.498116827289987,
+        "worst_shortfall_pct": 34.12766827427032
+      },
+      "fhs_floor": {
+        "avg_haircut": 0.24169831942490172,
+        "breach_rate": 0.003833829251544976,
+        "mean_shortfall_bp": 2.7401314422817546,
+        "worst_shortfall_pct": 28.805380503219414
+      }
+    },
+    "second": {
+      "fixed": {
+        "avg_haircut": 0.37924947263239706,
+        "breach_rate": 0.00011102475852115021,
+        "mean_shortfall_bp": 0.03689400006645189,
+        "worst_shortfall_pct": 5.269604876867406
+      },
+      "hist1y": {
+        "avg_haircut": 0.146750903990147,
+        "breach_rate": 0.011065467599274638,
+        "mean_shortfall_bp": 4.246431839124018,
+        "worst_shortfall_pct": 17.565902778816977
+      },
+      "fhs": {
+        "avg_haircut": 0.14631899856502,
+        "breach_rate": 0.010695385070870804,
+        "mean_shortfall_bp": 4.115819450576508,
+        "worst_shortfall_pct": 23.00558280453373
+      },
+      "fhs_floor": {
+        "avg_haircut": 0.20307278603513473,
+        "breach_rate": 0.0025165611931460717,
+        "mean_shortfall_bp": 1.0750340927056479,
+        "worst_shortfall_pct": 14.065183168582529
+      }
+    }
+  },
+  "stress_events": [
+    {
+      "event": "Mar 2020 COVID crash",
+      "date": "2020-03-11",
+      "book_loss": 0.2882614952332866,
+      "worst_coin": "link",
+      "worst_coin_loss": 0.3578815098925219,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 25761495.23328658,
+      "hist1y": 0.14109956980606342,
+      "shortfall_hist1y_usd": 147161925.42722318,
+      "fhs": 0.16560065815765346,
+      "shortfall_fhs_usd": 122660837.07563314,
+      "fhs_floor": 0.20532057033885542,
+      "shortfall_fhs_floor_usd": 82940924.89443117
+    },
+    {
+      "event": "May 2021 sell-off",
+      "date": "2021-05-18",
+      "book_loss": 0.12109738425612482,
+      "worst_coin": "link",
+      "worst_coin_loss": 0.278918976428847,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 0.0,
+      "hist1y": 0.15064330842504323,
+      "shortfall_hist1y_usd": 0.0,
+      "fhs": 0.22324593229444709,
+      "shortfall_fhs_usd": 0.0,
+      "fhs_floor": 0.23103461328315802,
+      "shortfall_fhs_floor_usd": 0.0
+    },
+    {
+      "event": "Jun 2022 Celsius / 3AC",
+      "date": "2022-06-12",
+      "book_loss": 0.15526386593244318,
+      "worst_coin": "trx",
+      "worst_coin_loss": 0.27356466304442106,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 0.0,
+      "hist1y": 0.15334982929135435,
+      "shortfall_hist1y_usd": 1914036.6410888287,
+      "fhs": 0.16977164301441927,
+      "shortfall_fhs_usd": 0.0,
+      "fhs_floor": 0.18067694642160204,
+      "shortfall_fhs_floor_usd": 0.0
+    },
+    {
+      "event": "Nov 2022 FTX",
+      "date": "2022-11-07",
+      "book_loss": 0.2615046228193467,
+      "worst_coin": "algo",
+      "worst_coin_loss": 0.3680863283358168,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 0.0,
+      "hist1y": 0.1520033414429221,
+      "shortfall_hist1y_usd": 109501281.37642463,
+      "fhs": 0.11199118679400638,
+      "shortfall_fhs_usd": 149513436.02534035,
+      "fhs_floor": 0.17977019650787143,
+      "shortfall_fhs_floor_usd": 81734426.31147529
+    },
+    {
+      "event": "Aug 2024 yen carry unwind",
+      "date": "2024-08-03",
+      "book_loss": 0.12264353595895815,
+      "worst_coin": "uni",
+      "worst_coin_loss": 0.18727640185274474,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 0.0,
+      "hist1y": 0.09834702383948381,
+      "shortfall_hist1y_usd": 24296512.11947434,
+      "fhs": 0.11325719391783994,
+      "shortfall_fhs_usd": 9386342.041118212,
+      "fhs_floor": 0.16141682061636875,
+      "shortfall_fhs_floor_usd": 0.0
+    },
+    {
+      "event": "Oct 2025 liquidation cascade",
+      "date": "2025-10-09",
+      "book_loss": 0.12601905111560344,
+      "worst_coin": "dot",
+      "worst_coin_loss": 0.2631940708087642,
+      "fixed": 0.2625,
+      "shortfall_fixed_usd": 0.0,
+      "hist1y": 0.10798484637493228,
+      "shortfall_hist1y_usd": 18034204.74067116,
+      "fhs": 0.08589923044202863,
+      "shortfall_fhs_usd": 40119820.673574805,
+      "fhs_floor": 0.15332674698100526,
+      "shortfall_fhs_floor_usd": 0.0
+    }
+  ],
+  "mpor_sensitivity": [
+    {
+      "model": "fixed",
+      "avg_haircut": 0.37590870287999284,
+      "breach_rate": 0.00017971874017163139,
+      "mean_shortfall_bp": 0.1093122884973083,
+      "mpor": 1
+    },
+    {
+      "model": "hist1y",
+      "avg_haircut": 0.12243572432301769,
+      "breach_rate": 0.011209956418205509,
+      "mean_shortfall_bp": 4.434479357179639,
+      "mpor": 1
+    },
+    {
+      "model": "fhs",
+      "avg_haircut": 0.1202212363798037,
+      "breach_rate": 0.011322280630812778,
+      "mean_shortfall_bp": 3.9750856820022684,
+      "mpor": 1
+    },
+    {
+      "model": "fhs_floor",
+      "avg_haircut": 0.16263212702163113,
+      "breach_rate": 0.003055218582917734,
+      "mean_shortfall_bp": 1.6097378982744914,
+      "mpor": 1
+    },
+    {
+      "model": "fixed",
+      "avg_haircut": 0.37590736454142976,
+      "breach_rate": 0.0004269950783198867,
+      "mean_shortfall_bp": 0.24002435077335962,
+      "mpor": 2
+    },
+    {
+      "model": "hist1y",
+      "avg_haircut": 0.1644137483696765,
+      "breach_rate": 0.01177607479155898,
+      "mean_shortfall_bp": 5.405848660205465,
+      "mpor": 2
+    },
+    {
+      "model": "fhs",
+      "avg_haircut": 0.1654228564218911,
+      "breach_rate": 0.01148392026428748,
+      "mean_shortfall_bp": 5.0514562116040995,
+      "mpor": 2
+    },
+    {
+      "model": "fhs_floor",
+      "avg_haircut": 0.21824279348551498,
+      "breach_rate": 0.0030339123985886687,
+      "mean_shortfall_bp": 1.7289937142799572,
+      "mpor": 2
+    },
+    {
+      "model": "fixed",
+      "avg_haircut": 0.37590334338298154,
+      "breach_rate": 0.0022949196778112766,
+      "mean_shortfall_bp": 1.3332847144569986,
+      "mpor": 5
+    },
+    {
+      "model": "hist1y",
+      "avg_haircut": 0.24819244308484378,
+      "breach_rate": 0.012487062952796653,
+      "mean_shortfall_bp": 7.696389866159272,
+      "mpor": 5
+    },
+    {
+      "model": "fhs",
+      "avg_haircut": 0.25570600984636654,
+      "breach_rate": 0.012554560590379337,
+      "mean_shortfall_bp": 6.118833715683415,
+      "mpor": 5
+    },
+    {
+      "model": "fhs_floor",
+      "avg_haircut": 0.31907186210525407,
+      "breach_rate": 0.003442379516716915,
+      "mean_shortfall_bp": 1.8701381673084443,
+      "mpor": 5
+    },
+    {
+      "model": "fixed",
+      "avg_haircut": 0.3758966209057505,
+      "breach_rate": 0.00752913595275129,
+      "mean_shortfall_bp": 5.328009604441694,
+      "mpor": 10
+    },
+    {
+      "model": "hist1y",
+      "avg_haircut": 0.3097583504956448,
+      "breach_rate": 0.016703861499966187,
+      "mean_shortfall_bp": 12.001800304198508,
+      "mpor": 10
+    },
+    {
+      "model": "fhs",
+      "avg_haircut": 0.3323995306445851,
+      "breach_rate": 0.013683190189580939,
+      "mean_shortfall_bp": 8.58240427472006,
+      "mpor": 10
+    },
+    {
+      "model": "fhs_floor",
+      "avg_haircut": 0.414873659429935,
+      "breach_rate": 0.003110840603232569,
+      "mean_shortfall_bp": 1.7693768408938941,
+      "mpor": 10
+    }
+  ],
+  "stablecoins": [
+    {
+      "asset": "usdc",
+      "days": 2428,
+      "avg_hist1y": 0.001268467332108093,
+      "avg_fhs_floor": 0.002647848943812038,
+      "breach_rate_hist1y": 0.009472817133443162,
+      "breach_rate_fhs_floor": 0.002059308072487644,
+      "worst_loss": 0.029357308793523273,
+      "worst_loss_date": "2023-03-09",
+      "hist1y_on_worst": 0.000824849365385516,
+      "fhs_floor_on_worst": 0.002036911171428235
+    },
+    {
+      "asset": "usdt",
+      "days": 3063,
+      "avg_hist1y": 0.008205574453329293,
+      "avg_fhs_floor": 0.04405347318003845,
+      "breach_rate_hist1y": 0.0075089781260202415,
+      "breach_rate_fhs_floor": 0.0,
+      "worst_loss": 0.03386233060294053,
+      "worst_loss_date": "2019-04-24",
+      "hist1y_on_worst": 0.01803943620986881,
+      "fhs_floor_on_worst": 0.06110146541552475
+    }
+  ]
+}
