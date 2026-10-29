@@ -97,4 +97,4 @@ reports/metrics.json         every number quoted in the article
 - Christoffersen, P. (1998). "Evaluating interval forecasts." *International Economic Review*, 39(4), 841-862.
 - Commission Delegated Regulation (EU) No 153/2013, Article 28 (anti-procyclicality margin measures for CCPs, including the ten-year lookback option).
 
-All code, analysis and charts are the author's own. MIT licence (code only; the data keeps its own licence).
+Code, analysis, charts and text were produced with AI assistance (Claude, by Anthropic) and reviewed by Gaurav Gupta. MIT licence (code only; the data keeps its own licence).
